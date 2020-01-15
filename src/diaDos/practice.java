@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -33,6 +34,15 @@ public class practice {
 		selenium_java.click();
 		System.out.println(driver.getCurrentUrl());
 	}
+	
+	@Test(priority = 2)
+	public void Practica2() {
+		driver.get(LocatorRepository.URL);
+		System.out.println(driver.getTitle());
+		WebElement logoGoogle = driver.findElement(By.id("hplogo"));
+		Assert.assertTrue(logoGoogle.isDisplayed());
+	}
+	
 	@AfterTest
 	private void tearDown() {
 		driver.close();
