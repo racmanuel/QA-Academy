@@ -9,4 +9,9 @@ public class LocatorRepository_Practice {
 	final static String logoSelenium="#header>.headerLink>.logo-large";
 	final static String pageDownloads="#navbar>a";
 	final static String pageJavaApi="a[href*=\"https://seleniumhq.github.io/selenium/docs/api/java/index.html\"]";
+	
+	//Practica 3
+	final static String pageWiki=".rc>.r>a[href*='https://es.wikipedia.org/wiki/Katy_Perry']>h3";
+	final static String pageWiki_English="//a[@lang='en']";
+	
 }
